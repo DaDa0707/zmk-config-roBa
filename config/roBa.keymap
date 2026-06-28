@@ -90,7 +90,7 @@
 
         Nuber {
             bindings = <
-&none  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS   &none
+&none  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                         &kp N1           &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS   &none
 &none  &kp PIPE        &kp HASH           &kp AMPERSAND         &kp DOLLAR             &kp PERCENT          &kp KP_NUMBER_0   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &none
 &none  &kp SEMI        &kp SQT            &kp SLASH             &kp AT_SIGN            &kp EXCLAMATION      &kp ASTERISK      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp EQUAL  &none
 &none  &kp COLON       &kp DOUBLE_QUOTES  &mo 0                 &none                  &trans               &kp LEFT_CONTROL  &kp TAB                                                       &none
