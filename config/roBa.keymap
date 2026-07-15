@@ -100,13 +100,22 @@
 
         ARROW {
             bindings = <
-&none   &bt BT_SEL 0            &kp LC(LS(TAB))          &kp UP              &kp LC(TAB)                                           &kp RG(W)  &kp TAB               &kp ESC      &trans  &trans
-&none   &bt BT_SEL 1            &kp LEFT_ARROW           &kp DOWN_ARROW      &kp RIGHT_ARROW   &kp RG(C)                &kp RG(C)  &kp RG(V)  &mkp MB1              &mkp MB2     &trans  &trans
-&none   &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &kp LC(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)      &kp RG(X)  &kp RG(Z)  &kp RG(RS(NUMBER_3))  &kp RG(TAB)  &none   &trans
-&trans  &trans                  &trans                   &trans              &trans            &trans                   &trans     &trans                                                &trans
+&none   &bt BT_SEL 0            &kp LC(LS(TAB))          &kp UP              &kp LC(TAB)                                           &kp RG(W)  &kp TAB               &kp ESC      &trans    &trans
+&none   &bt BT_SEL 1            &kp LEFT_ARROW           &kp DOWN_ARROW      &kp RIGHT_ARROW   &kp RG(C)                &kp RG(C)  &kp RG(V)  &mkp MB1              &mkp MB2     &trans    &trans
+&none   &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &kp LC(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)      &kp RG(X)  &kp RG(Z)  &kp RG(RS(NUMBER_3))  &kp RG(TAB)  &kp CLCK  &trans
+&trans  &trans                  &trans                   &trans              &trans            &trans                   &trans     &trans                                                  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
         };
     };
 };
