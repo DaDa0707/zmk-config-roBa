@@ -167,18 +167,18 @@
         number {
             bindings = <
 &kp DOUBLE_QUOTES  &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS      &kp PERCENT
-&kp SQT            &kp UNDERSCORE  &kp COLON         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN        &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH     &kp EXCLAMATION
-&kp PIPE           &kp HASH        &kp SEMICOLON     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPERSAND      &kp EQUAL        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK  &kp QUESTION
+&trans             &kp UNDERSCORE  &kp COLON         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN        &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH     &kp EXCLAMATION
+&trans             &kp HASH        &kp SEMICOLON     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPERSAND      &kp EQUAL        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK  &kp QUESTION
 &trans             &trans          &trans            &trans                &trans                 &trans             &trans           &trans                                                           &kp BACKSLASH
             >;
         };
 
         ShortCut {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp LG(TAB)      &kp LG(W)       &kp LG(S)                                         &kp CARET   &kp AMPERSAND    &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp UP_ARROW    &kp LG(A)        &kp LG(Z)      &ipad_fullscreen  &ipad_home  &control_center  &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(X)      &trans            &ipad_dock  &ROCK            &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &trans           &trans          &trans           &trans         &trans            &trans                                                             &kp PIPE
+&kp MINUS  &kp KP_NUMBER_7  &kp LG(TAB)      &kp LG(W)       &kp LG(S)                                         &kp CARET   &kp AMPERSAND    &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp UP_ARROW    &kp LG(A)        &kp LG(Z)      &ipad_fullscreen  &ipad_home  &control_center  &kp HASH        &kp DOLLAR            &kp PERCENT
+&trans     &kp KP_NUMBER_1  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(X)      &trans            &ipad_dock  &ROCK            &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
+&trans     &trans           &trans           &trans          &trans           &trans         &trans            &trans                                                             &kp PIPE
             >;
         };
 
