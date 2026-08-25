@@ -137,6 +137,21 @@
 
             label = "IPAD_FULLSCREEN";
         };
+
+        app_swhi: app_swhi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&none>,
+                <&macro_press>,
+                <&kp GLOBE>,
+                <&macro_tap>,
+                <&kp UP_ARROW>,
+                <&macro_press>,
+                <&kp GLOBE>;
+
+            label = "APP_SWHI";
+        };
     };
 
     behaviors {
@@ -155,10 +170,10 @@
 
         default_layer {
             bindings = <
-&bt BT_NXT   &kp C      &kp L  &kp J            &kp P                                           &kp G        &kp Z  &kp D  &kp B  &kp ESC
-&lt 1 LG(C)  &kp TAB    &kp U  &kp I            &kp A      &kp V                 &kp Q          &kp K        &kp S  &kp T  &kp N  &kp MINUS
-&lt 2 LG(V)  &kp LSHFT  &kp W  &kp O            &kp E      &kp F                 &kp X          &kp H        &kp M  &kp Y  &kp R  &kp COMMA
-&none        &none      &none  &lt 0 LC(SPACE)  &kp SPACE  &kp LEFT_COMMAND      &kp BACKSPACE  &lt 3 ENTER                       &kp PERIOD
+&bt BT_SEL 1  &kp C      &kp L  &kp J            &kp P                                           &kp G        &kp Z  &kp D  &kp B  &kp ESC
+&lt 1 LG(C)   &kp TAB    &kp U  &kp I            &kp A      &kp V                 &kp Q          &kp K        &kp S  &kp T  &kp N  &kp MINUS
+&lt 2 LG(V)   &kp LSHFT  &kp W  &kp O            &kp E      &kp F                 &kp X          &kp H        &kp M  &kp Y  &kp R  &kp COMMA
+&none         &none      &none  &lt 0 LC(SPACE)  &kp SPACE  &kp LEFT_COMMAND      &kp BACKSPACE  &lt 3 ENTER                       &kp PERIOD
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -166,19 +181,19 @@
 
         number {
             bindings = <
-&kp DOUBLE_QUOTES  &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS      &kp PERCENT
-&trans             &kp UNDERSCORE  &kp COLON         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN        &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH     &kp EXCLAMATION
-&trans             &kp HASH        &kp SEMICOLON     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPERSAND      &kp EQUAL        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK  &kp QUESTION
-&trans             &trans          &trans            &trans                &trans                 &trans             &trans           &trans                                                           &kp BACKSLASH
+&bt BT_SEL 1  &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS      &kp PERCENT
+&trans        &kp UNDERSCORE  &kp COLON         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN        &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH     &kp EXCLAMATION
+&trans        &kp HASH        &kp SEMICOLON     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPERSAND      &kp EQUAL        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK  &kp QUESTION
+&trans        &trans          &trans            &trans                &trans                 &trans             &trans           &trans                                                           &kp BACKSLASH
             >;
         };
 
         ShortCut {
             bindings = <
-&kp MINUS  &kp KP_NUMBER_7  &kp LG(TAB)      &kp LG(W)       &kp LG(S)                                         &kp CARET   &kp AMPERSAND    &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp UP_ARROW    &kp LG(A)        &kp LG(Z)      &ipad_fullscreen  &ipad_home  &control_center  &kp HASH        &kp DOLLAR            &kp PERCENT
-&trans     &kp KP_NUMBER_1  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(X)      &trans            &ipad_dock  &ROCK            &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans     &trans           &trans           &trans          &trans           &trans         &trans            &trans                                                             &kp PIPE
+&bt BT_SEL 2  &kp LC(DOWN_ARROW)   &kp LG(TAB)       &kp LG(W)       &kp LG(S)                                         &kp CARET   &kp AMPERSAND    &kp TILDE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans        &kp LC(RIGHT_ARROW)  &kp LC(UP_ARROW)  &kp UP_ARROW    &kp LG(A)        &kp LG(Z)      &ipad_fullscreen  &ipad_home  &control_center  &kp HASH   &app_swhi             &kp PERCENT
+&trans        &kp LC(LEFT_ARROW)   &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(X)      &trans            &ipad_dock  &ROCK            &kp GLOBE  &kp RIGHT_BRACE       &kp BACKSLASH
+&trans        &trans               &trans            &trans          &trans           &trans         &trans            &trans                                                        &kp PIPE
             >;
         };
 
