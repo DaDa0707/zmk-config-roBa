@@ -152,6 +152,39 @@
 
             label = "APP_SWHI";
         };
+
+        kakko: kakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&none>,
+                <&macro_tap>,
+                <&kp LPAR &kp RPAR &kp LEFT_ARROW>;
+
+            label = "KAKKO";
+        };
+
+        tyuKakko: tyuKakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&none>,
+                <&macro_tap>,
+                <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW>;
+
+            label = "TYUKAKKO";
+        };
+
+        DaiSyouKakko: DaiSyouKakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&none>,
+                <&macro_tap>,
+                <&kp LESS_THAN &kp GREATER_THAN &kp LEFT_ARROW>;
+
+            label = "DAISYOUKAKKO";
+        };
     };
 
     behaviors {
@@ -170,10 +203,10 @@
 
         default_layer {
             bindings = <
-&bt BT_SEL 0  &kp C                   &kp L  &kp J            &kp P                                           &kp G      &kp Z  &kp D  &kp B  &kp ESC
-&lt 1 LG(C)   &lt 3 TAB               &kp U  &kp I            &kp A      &kp V                 &kp Q          &kp K      &kp S  &kp T  &kp N  &kp MINUS
-&lt 2 LG(V)   &lt 4 LG(LS(NUMBER_3))  &kp W  &kp O            &kp E      &kp F                 &kp X          &kp H      &kp M  &kp Y  &kp R  &kp COMMA
-&none         &none                   &none  &lt 0 LC(SPACE)  &kp SPACE  &kp LEFT_COMMAND      &kp BACKSPACE  &kp ENTER                       &kp LSHFT
+&none  &lt 1 ESCAPE        &kp Q               &kp J            &kp F                                           &kp X      &kp Y  &kp R  &mt MINUS W   &none
+&none  &lt 2 TAB           &kp U               &kp I            &kp A      &kp L                 &kp B          &kp Z      &kp N  &kp H  &mt COMMA M   &none
+&none  &lt 3 LS(LG(N3))    &mt LEFT_CONTROL P  &kp O            &kp E      &kp C                 &kp D          &kp G      &kp K  &kp S  &mt PERIOD T  &none
+&none  &lt 4 LEFT_CONTROL  &mt LSHFT V         &lt 0 LC(SPACE)  &kp SPACE  &kp LEFT_COMMAND      &kp BACKSPACE  &kp ENTER                              &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -181,10 +214,10 @@
 
         number {
             bindings = <
-&bt BT_SEL 1  &kp LESS_THAN   &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                                      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS      &kp PERCENT
-&trans        &kp UNDERSCORE  &kp COLON         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN        &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH     &kp EXCLAMATION
-&trans        &kp HASH        &kp SEMICOLON     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPERSAND      &kp EQUAL        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK  &kp QUESTION
-&trans        &trans          &trans            &trans                &trans                 &trans             &trans           &trans                                                           &kp BACKSLASH
+&none  &kp AMPERSAND      &kp AT_SIGN    &kp EXCLAMATION  &DaiSyouKakko                                 &kp ASTERISK     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none
+&none  &kp UNDERSCORE     &kp COLON      &kp QUESTION     &tyuKakko      &bt BT_SEL 0      &kp PERCENT  &kp EQUAL        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none
+&none  &kp HASH           &kp SEMICOLON  &kp SLASH        &kakko         &bt BT_SEL 1      &kp PLUS     &kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none
+&none  &kp DOUBLE_QUOTES  &kp BACKSLASH  &trans           &trans         &trans            &trans       &trans                                                              &none
             >;
         };
 
