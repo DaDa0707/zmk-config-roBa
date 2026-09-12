@@ -215,8 +215,8 @@
         number {
             bindings = <
 &none  &none           &kp AT_SIGN    &kp EXCLAMATION  &DaiSyouKakko                                 &kp ASTERISK     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none
-&none  &kp UNDERSCORE  &kp COLON      &kp QUESTION     &tyuKakko      &bt BT_SEL 0      &kp PERCENT  &kp EQUAL        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none
-&none  &kp HASH        &kp SEMICOLON  &kp SLASH        &kakko         &bt BT_SEL 1      &kp PLUS     &kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none
+&none  &kp UNDERSCORE  &kp COLON      &kp QUESTION     &tyuKakko      &bt BT_CLR        &kp PERCENT  &kp EQUAL        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none
+&none  &bt BT_SEL 0    &kp SEMICOLON  &kp SLASH        &kakko         &bt BT_SEL 1      &kp PLUS     &kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none
 &none  &kp AMPERSAND   &kp BACKSLASH  &trans           &trans         &trans            &trans       &trans                                                              &none
             >;
         };
