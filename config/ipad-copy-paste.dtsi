@@ -1,0 +1,15 @@
+// Trial macro for iPad: copy the selection, then paste in the current app.
+// Assign IPAD_COPY_PASTE to a key using ZMK Studio after flashing roBa_R.
+// No key position is overwritten by this definition.
+/ {
+    macros {
+        ipad_copy_paste: ipad_copy_paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "IPAD_COPY_PASTE";
+            tap-ms = <40>;
+            wait-ms = <250>;
+            bindings = <&macro_tap &kp LG(C) &kp LG(V)>;
+        };
+    };
+};
