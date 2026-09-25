@@ -1,0 +1,32 @@
+{
+  "macros" : [
+    {
+      "id" : "7936271E-A121-4CBA-8A22-9517DDBA60B1",
+      "name" : "COPY_PASTE",
+      "steps" : [
+        {
+          "id" : "2E652B2D-ED9E-4476-BA6E-E2BDC5147AA0",
+          "key" : 458758,
+          "kind" : "key",
+          "milliseconds" : 250,
+          "modifiers" : 8
+        },
+        {
+          "id" : "74FCF811-0F3E-46D7-B07D-5237DC20B256",
+          "key" : 458756,
+          "kind" : "wait",
+          "milliseconds" : 250,
+          "modifiers" : 0
+        },
+        {
+          "id" : "65FC4DEC-1099-4104-B726-4E545C6F1D5A",
+          "key" : 458777,
+          "kind" : "key",
+          "milliseconds" : 250,
+          "modifiers" : 8
+        }
+      ]
+    }
+  ],
+  "version" : 1
+}
