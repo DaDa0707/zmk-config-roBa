@@ -6,8 +6,8 @@
             #binding-cells = <0>;
             label = "COPY_PASTE";
             tap-ms = <40>;
-            wait-ms = <10>;
-            bindings = <&macro_tap>, <&macro_wait_time 250>, <&kp 0x08070006>, <&macro_wait_time 10>, <&kp 0x08070019>;
+            wait-ms = <40>;
+            bindings = <&macro_tap>, <&kp 0x08070006>, <&macro_wait_time 250>, <&kp 0x08070019>;
         };
     };
 };
